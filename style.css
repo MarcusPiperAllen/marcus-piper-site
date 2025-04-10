@@ -1,0 +1,212 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigation */
+nav {
+  background: #1e3c72;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f9a825;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero__avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #fff;
+}
+
+.hero__name {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero__intro {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+  background: #f9a825;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #ffc107;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section__title {
+  font-size: 2rem;
+  color: #1e3c72;
+  margin-bottom: 20px;
+}
+
+.skills__list,
+.projects__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills__list li,
+.projects__list li {
+  background: #e0f0ff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #1e3c72;
+}
+
+.projects__list a {
+  font-weight: bold;
+  color: #1e3c72;
+}
+
+/* Footer */
+footer {
+  background: #1e3c72;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #f9a825;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.animate-title {
+  animation: fadeInUp 0.6s ease-out both;
+}
+/* ----------------------------------
+   MEDIA QUERIES: Responsive Layout
+---------------------------------- */
+
+/* Tablet (min-width: 600px) */
+@media (min-width: 600px) {
+    nav ul {
+      gap: 3rem;
+    }
+  
+    .hero__name {
+      font-size: 3rem;
+    }
+  
+    .skills__list,
+    .projects__list {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+  
+    .skills__list li,
+    .projects__list li {
+      font-size: 1.1rem;
+      flex: 0 0 auto;
+    }
+  }
+  
+  /* Desktop (min-width: 900px) */
+  @media (min-width: 900px) {
+    header.hero {
+      padding: 120px 40px;
+    }
+  
+    .hero__name {
+      font-size: 3.5rem;
+    }
+  
+    .hero__intro {
+      font-size: 1.3rem;
+    }
+  
+    section {
+      padding: 80px 40px;
+    }
+  
+    nav ul {
+      justify-content: flex-end;
+      padding-right: 40px;
+    }
+  }
+  #about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .about__text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
